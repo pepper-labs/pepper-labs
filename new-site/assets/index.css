@@ -87,3 +87,21 @@ header a, header a:visited, header a:link, header a:active, header a:hover {
     text-decoration: none;
 }
 
+.large {
+    font-size: 120%;
+}
+.small {
+    font-size: 75%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sorry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
