@@ -1,107 +1,108 @@
 @import url('https://fonts.googleapis.com/css?family=Mada:300,400,700');
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-    font-family: 'Mada', 'Helvetica Neue', helvetica, arial, sans-serif;
-    margin: 0;
-    font-size: 2.32em;
-    color: #1d2d35;
+  font-family: 'Mada', 'Helvetica Neue', helvetica, arial, sans-serif;
+  margin: 0;
+  font-size: 2.32em;
+  color: #1d2d35;
 }
 
 main, footer {
-    width: 920px;
-    margin: auto;
+  width: 920px;
+  margin: auto;
 }
 
 header {
-    position: fixed;
+  position: fixed;
 }
 
 main {
-    padding: 7em 0 4em 0;
+  padding: 7em 0 4em 0;
 }
 
 .heading {
-    margin: 0 0 0.25em 0;
-    font-size: 250%;
-    line-height: 1.05;
+  margin: 0 0 0.25em 0;
+  font-size: 250%;
+  line-height: 1.05;
 }
 
 .heading--large {
-    font-size: 330%;
+  font-size: 330%;
 }
 
 h2 {
-    font-size: 160%;
-    margin: 2em 0 0.25em 0;
-    padding: 0;
-    font-weight: 700;
-    line-height: 1.25;
-    letter-spacing: -0.02em;
+  font-size: 160%;
+  margin: 2em 0 0.25em 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
 p {
-    margin: 0 0 1em 0;
-    padding: 0;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
+  margin: 0 0 1em 0;
+  padding: 0;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 
 .logo {
-    padding: 21px 0 0 21px
+  padding: 21px 0 0 21px
 }
 
 .logo__image, .logo__text {
-    vertical-align: middle
+  vertical-align: middle
 }
 
 .logo__text {
-    cursor: default;
-    display: inline-block;
-    color: #1d2d35;
-    padding-left: 11px;
-    font-size: 1.5em
+  cursor: default;
+  display: inline-block;
+  color: #1d2d35;
+  padding-left: 11px;
+  font-size: 1.5em
 }
 
 a {
-    color: #1d2d35;
-    transition: all 0.2s ease;
-    transition-property: text-decoration-color, text-decoration-thickness;
-    text-decoration-thickness: 0.1em;
-    vertical-align: baseline;
+  color: #1d2d35;
+  transition: all 0.2s ease;
+  transition-property: text-decoration-color, text-decoration-thickness;
+  text-decoration-thickness: 0.1em;
+  vertical-align: baseline;
 }
 
 a:hover {
-    text-decoration-color: #ec3a3a;
-    text-decoration-thickness: 0.2em;
+  text-decoration-color: #ec3a3a;
+  text-decoration-thickness: 0.2em;
 }
 
 a:visited, a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header a, header a:visited, header a:link, header a:active, header a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .large {
-    font-size: 120%;
+  font-size: 120%;
 }
+
 .small {
-    font-size: 75%;
+  font-size: 75%;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .sorry {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
