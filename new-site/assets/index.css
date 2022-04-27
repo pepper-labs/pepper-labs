@@ -1,57 +1,91 @@
 @import url('https://fonts.googleapis.com/css?family=Mada:300,400,700');
 
+:root {
+  --max-width: 720px;
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    --max-width: 1200px;
+  }
+}
+
+
 html {
-  font-size: 10px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 1ch;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
 body {
   font-family: 'Mada', 'Helvetica Neue', helvetica, arial, sans-serif;
   margin: 0;
-  font-size: 2.32em;
+  font-size: 2.32rem;
   color: #1d2d35;
 }
 
 main, footer {
-  width: 920px;
-  margin: auto;
+  width: var(--max-width);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  padding-bottom: 4rem;
+  text-align: right;
 }
 
 header {
-  position: fixed;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  max-width: calc(2 * var(--max-width));
+  margin: 0 auto;
+  padding-bottom: 4rem;
 }
 
-main {
-  padding: 7em 0 4em 0;
+@media screen and (max-width: 800px) {
+  header {
+    text-align: center;
+  }
 }
 
-.heading {
-  margin: 0 0 0.25em 0;
-  font-size: 250%;
-  line-height: 1.05;
-}
-
-.heading--large {
-  font-size: 330%;
+h1 {
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 160%;
+  font-size: 3.5rem;
   margin: 2em 0 0.25em 0;
   padding: 0;
   font-weight: 700;
   line-height: 1.25;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02rem;
 }
 
 p {
   margin: 0 0 1em 0;
   padding: 0;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.02rem;
 }
 
 .logo {
-  padding: 21px 0 0 21px
+  display: inline-block;
+  margin: 12px 0 0 12px;
+  padding: 0.5em 1em;
+  background-color: #fff;
+  border-radius: 48px;
+  box-shadow: 4px 8px 12px rgba(255, 255, 255, 0.5);
 }
 
 .logo__image, .logo__text {
@@ -59,24 +93,27 @@ p {
 }
 
 .logo__text {
-  cursor: default;
   display: inline-block;
   color: #1d2d35;
-  padding-left: 11px;
-  font-size: 1.5em
+  padding-left: 12px;
+  font-size: 36px;
 }
 
 a {
   color: #1d2d35;
   transition: all 0.2s ease;
   transition-property: text-decoration-color, text-decoration-thickness;
-  text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 0.1rem;
   vertical-align: baseline;
+}
+
+a[href^="tel:"] {
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration-color: #ec3a3a;
-  text-decoration-thickness: 0.2em;
+  text-decoration-thickness: 0.2rem;
 }
 
 a:visited, a:active {
@@ -87,22 +124,44 @@ header a, header a:visited, header a:link, header a:active, header a:hover {
   text-decoration: none;
 }
 
-.large {
-  font-size: 120%;
+.error-page {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
 }
 
-.small {
-  font-size: 75%;
+.error-page main {
+  flex: 1 1 100%;
+  width: unset;
+  max-width: calc(1.5 * var(--max-width));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media screen and (max-width: 800px) {
+  .error-page main {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .sorry {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100vh;
+  font-size: 0.9em;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .sorry {
+    display: block;
+  }
+}
+
+.error-page h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
