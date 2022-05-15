@@ -172,3 +172,7 @@ header a, header a:visited, header a:link, header a:active, header a:hover {
   margin-top: 0;
   margin-bottom: 2rem;
 }
+
+.title-navigation--small {
+  font-size: 1.5rem;
+}
