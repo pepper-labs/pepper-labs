@@ -5,7 +5,7 @@
 
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mada:300,400,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Think we’re crazy to not hire you? Let us know! | PepperLabs">
+  <meta name="description" content="Your application was successful | PepperLabs">
   <meta name="keywords" content="better products, agile, extreme programming, TDD, bugs, web, application">
   <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
   <meta name="msapplication-TileColor" content="#da532c">
@@ -13,13 +13,13 @@
   <meta property="og:image:height" content="377">
   <meta property="og:image:width" content="720">
   <meta property="og:title" content="PepperLabs.io">
-  <meta property="og:description" content="Think we’re crazy to not hire you? Let us know! | PepperLabs">
+  <meta property="og:description" content="Your application was successful | PepperLabs">
   <meta property="og:url" content="https://pepperlabs.io">
   <meta property="og:image" content="https://pepperlabs.io/assets/logo.svg">
   <link rel="canonical" href="https://pepperlabs.io/">
   <link rel="stylesheet" type="text/css" href="/assets/index.css">
 
-  <title>Your job here</title>
+  <title>Your application was successful</title>
 </head>
 
 <body>
@@ -34,32 +34,10 @@
 
 <main>
   <section>
-    <h1>Think we should hire you?</h1>
-
-    <h2>You might be right!</h2>
+    <h1>Thanks for your application!</h1>
 
     <p>
-      We’re a small company with lots going on. This means it’s totally possible we’d really benefit from your help, but haven’t realized it yet.
-    </p>
-
-    <p>
-      If you’d love to work at PepperLabs and think you could have a big impact, we’d love to hear from you, regardless of which openings you see on our <a href="/careers">jobs page</a>.
-    </p>
-
-    <p>
-      Please write a bit about why we’re a great fit for each other and what you see the future being like if we work together.
-    </p>
-
-    <p>
-      You don’t need to include a resume, but that doesn’t mean we’re not interested in what you’ve done in the past. Feel free to tell your story however you like.
-    </p>
-
-    <p>
-      When you’re ready, email <a href="mailto:jobs+tbd@pepperlabs.io">jobs+tbd@pepperlabs.io</a>.
-    </p>
-
-    <p>
-      <em>(If you’d rather wait until we post a job ad that’s relevant to you, drop us an email anyway and we’ll notify you when we post new jobs.)</em>
+      We’ll get back to you within 2 days!
     </p>
   </section>
 </main>
@@ -71,3 +49,29 @@
 </footer>
 </body>
 </html>
+
+
+<form action="https://www.actionforms.io/e/r/careers-test" method="POST">
+  <input type="hidden" name="position" value="typescript-developer-backend">
+
+  <div>
+    <label for="fullName">Full name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+  </div>
+
+  <div>
+    <label for="additionalInformation">Additional information:</label>
+    <textarea placeholder="Add a cover letter or anything else you want to share." name="additionalInformation" id="additionalInformation" spellcheck="false"></textarea>
+  </div>
+  <button type="submit">Submit application</button>
+</form>
